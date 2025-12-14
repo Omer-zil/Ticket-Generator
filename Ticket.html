@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Generetor</title>
+    <link  rel="stylesheet" href="Ticket.css">
+</head>
+<body>
+  <div class="bg">
+
+    <img src="images/pattern-lines.svg" class="bg-lines">
+    <img src="images/pattern-circle.svg" class="bg-circle">
+    <img src="images/pattern-squiggly-line-bottom-mobile-tablet.svg" class="bg-squiggle-bottom">
+    <img class="bg-middle-circle" src="images/pattern-circle.svg">
+    <img src="images/pattern-squiggly-line-top.svg" class="bg-squiggle-top">
+
+<main class="container">
+  <div class="logo">
+    <img src="images/logo-mark.svg">
+    <p>Coding Conf</p>
+  </div>
+
+  <p class="text">Your Journey to Coding<br>Conf 2025 Starts Here!</p>
+  <p class="sub-text">Secure your spot at next year's<br>biggest coding conference.</p>
+
+  <form>
+    <label class="avatar-upload-label">
+      <span class="upload-title">Upload Avatar</span>
+
+      <div class="upload-box">
+        <!-- Upload icon initially visible -->
+        <img src="images/icon-upload.svg" class="upload-icon js-upload-icon" alt="upload">
+
+        <span class="upload-instructions js-upload-text">
+          Drag and drop or click to upload
+        </span>
+
+        <!-- File input hidden -->
+        <input
+          type="file"
+          class="avatar-upload js-avatar-upload"
+          accept="image/png, image/jpeg"
+          style="display:none;"
+        >
+
+        <!-- Avatar preview -->
+        <img class="avatar-preview js-avatar-preview" alt="Preview" style="display: none;">
+
+        <!-- Change / Remove buttons -->
+        <div class="avatar-buttons" style="display: none;">
+          <button type="button" class="js-change-photo">Change Photo</button>
+          <button type="button" class="js-remove-photo">Remove Photo</button>
+        </div>
+      </div>
+
+      <span class="upload-subtext js-upload-instructions">
+        <img src="images/icon-info.svg"> Upload your photo (JPG or PNG, max size: 500KB).
+      </span>
+    </label>
+
+    <!-- Name input -->
+    <label for="full-name" class="input-label">
+      <div class="name">
+        <span class="input-title">Full Name</span>
+        <input type="text" class="input-field js-fullname">
+      </div>
+    </label>
+
+    <!-- Email input -->
+    <label for="email" class="input-label">
+      <div class="name">
+        <span class="input-title">Email Address</span>
+        <input type="text" class="input-field js-input-email" placeholder="example@gmail.com">
+      </div>
+    </label>
+
+    <!-- GitHub input -->
+    <label for="github" class="input-label">
+      <div class="name">
+        <span class="input-title">GitHub Username</span>
+        <input type="text" class="input-field js-github-username" placeholder="@yourusername">
+      </div>
+    </label>
+
+    <div class="button">
+      <button class="js-button">Generate My Ticket</button>
+    </div>
+  </form>
+</main>
+
+
+  </div>
+
+  <script src="Ticket.js"></script>
+</body>
+</html>

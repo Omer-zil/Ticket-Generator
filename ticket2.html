@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ticket2.css">
+</head>
+<body>
+    <body>
+    <div class="background">
+        <img class="pattern-lines" src="images/pattern-lines.svg" alt="">
+        <img class="circle1" src="images/pattern-circle.svg" alt="">
+        <img class="circle2" src="images/pattern-circle.svg" alt="">
+        <img class="line-top" src="images/pattern-squiggly-line-top.svg" alt="">
+        <img class="line-bottom" src="images/pattern-squiggly-line-bottom-desktop.svg" alt="">
+    </div>
+
+    
+    <div class="content">
+        <p class="up"><img src="images/logo-mark.svg">Coding Conf</p>
+        <p>Your Journey to Coding<br> Conf 2025 Starts Here!<p>
+        <p>Secure your spot at next year's<br> biggest coding conference.</p>
+        <form>
+            <label>Upload Avatar</label><br>
+            <input class="upload" placeholder="Drag" type="file" accept="image/png, image/jpeg" required>
+            <img src="images/icon-upload.svg">
+            <p><img src="images/icon-info.svg">Upload your photo(JPG or PNG,max size:5ookB).</p>
+
+           <div class="container">
+             <label>Full Name</label><br>
+            <input class="js-name" type="text"><br>
+
+            <label>Email Address</label><br>
+            <input class="js-email" placeholder="example@gmail.com" type="email"><br>
+            
+             <label>GitHub Username</label><br>
+            <input class="js-git" placeholder="@your username" type="text"><br>
+
+          <button type="button" onclick="
+          generate();
+          ">Generate Conf</button>
+           </div>
+                
+        </form>
+
+        <div  class="js-display"></div>
+    </div>
+    <script src="Ticket.js"></script>
+</body>
+</body>
+</html>
