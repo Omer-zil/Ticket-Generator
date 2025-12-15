@@ -140,3 +140,10 @@ body {
    margin-left: 550px;
 }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .ticket-card{
+   width: 350px;
+   margin-left: 200px;
+  }
+}
