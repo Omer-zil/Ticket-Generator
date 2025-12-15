@@ -75,7 +75,7 @@ function display() {
       }));
 
       alert('Form submitted successfully!');
-      window.location.href = 'congra.html';
+      window.location.href = 'index2.html';
     };
 
     reader.readAsDataURL(file);
